@@ -1,4 +1,3 @@
-Examples
 This directory contains example trading algorithms that connect to the paper-trading API. First you must install the Alpaca package, then you can run the trading algorithm in a python environment. Please note you will need to replace the API_KEY and API_SECRET parameters at the top of the file with your own information from the Alpaca dashboard. Please also note that the performance of these scripts in a real trading environment is not guaranteed. While they are written with the goal of showing realistic uses of the SDK, there is no guarantee that the strategies they outline are a good fit for your own brokerage account.
 
 Long-Short Equity
