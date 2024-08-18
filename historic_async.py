@@ -96,7 +96,7 @@ if __name__ == '__main__':
     api_key_id = os.environ.get('APCA_API_KEY_ID')
     api_secret = os.environ.get('APCA_API_SECRET_KEY')
     base_url = "https://paper-api.alpaca.markets"
-    feed = "iex"  # change to "sip" if you have a paid account
+    feed = "iex"  
 
     rest = AsyncRest(key_id=api_key_id,
                      secret_key=api_secret)
