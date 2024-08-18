@@ -332,14 +332,12 @@ class LongShort:
 
   # Mechanism used to rank the stocks, the basis of the Long-Short Equity Strategy.
   def rank(self):
-    # Ranks all stocks by percent change over the past 10 minutes (higher is better).
     tGetPC = threading.Thread(target=self.getPercentChanges)
     tGetPC.start()
     tGetPC.join()
 
-    # Sort the stocks in place by the percent change field (marked by pc).
     self.allStocks.sort(key=lambda x: x[1])
 
-# Run the LongShort class
+
 ls = LongShort()
 ls.run()
